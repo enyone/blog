@@ -4,5 +4,9 @@ authors: Juho Tykkälä
 theme: jekyll-theme-hacker
 twitter: tykkala
 
+baseurl: "/"
+url: "blog.rainio.org"
+permalink: /:title
+
 gems:
   - jekyll-sitemap
