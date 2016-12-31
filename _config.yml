@@ -5,7 +5,7 @@ theme: jekyll-theme-slate
 twitter: tykkala
 
 paginate: 5
-url: "blog.rainio.org"
+url: "blog.enyone.rainio.org"
 permalink: /:title
 excerpt_separator: end of TL;DR so now go and read...
 
