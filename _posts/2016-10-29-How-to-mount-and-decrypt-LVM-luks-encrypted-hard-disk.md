@@ -2,7 +2,7 @@
 
 This helps you when you need to mount LVM-luks encrypted partition manually. This guide works at least in GNU/Linux Debian Jessie.
 
-end of TL;DR so now go and read…
+end of TL;DR so now go and read...
 
 Finding correct device
 -----------
