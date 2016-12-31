@@ -21,7 +21,7 @@ Vendor=12d1 ProdID=1f02 Rev= 1.02
 
 At command line (SSH to OpenWRT):
 
-```
+```bash
 opkg update
 opkg install usb-modeswitch usb-modeswitch-data kmod-usb-net kmod-usb-net-cdc-ether
 usb_modeswitch -v 12d1 -p 1f02 -M 55534243123456780000000000000a11062000000000000100000000000000
@@ -77,7 +77,7 @@ Then reboot your OpenWRT device and check that everything starts as expected.
 
 It seems that OpenWRT 15.05 uses a file named "/etc/usb-mode.json". In that case, add the following section to it:
 
-```
+```json
   "12d1:1f02": {
     "*": {
       "t_vendor": 4817,
