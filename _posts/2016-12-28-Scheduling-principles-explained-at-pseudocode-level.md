@@ -18,7 +18,7 @@ A goal is to gain as much profitable thread time with most little code complexit
 Blocking, no scheduling
 ---
 
-```C
+```java
 void main() {
   while(true) {
     led_on()
@@ -36,7 +36,7 @@ Profitable thread time: ~2 ms
 Blocking, very simple scheduling
 ---
 
-```C
+```java
 // Flip-flop variable for software interrupt
 bool soft_interrupt = false
 
@@ -67,7 +67,7 @@ Profitable thread time: ~999 ms
 Non-blocking, state-based simple scheduling
 ---
 
-```C
+```java
 // Flip-flop variables for software interrupts
 bool soft_interrupt_1, soft_interrupt_2 = false
 
@@ -103,7 +103,7 @@ Profitable thread time: ~1998 ms
 Non-blocking, time-based simple scheduling
 ---
 
-```C
+```java
 // Flip-flop variables for software interrupts
 bool soft_interrupt_1, soft_interrupt_2 = false
 int ms_counter = 0
@@ -156,7 +156,7 @@ In this example we assume `led_blinker` and `whatever_work` operations are compl
 
 There is also `run_for_ms()` operation present which is capable of running a given task at a given amount of time only and then continuing to next task leaving previous task to an unfinished state (no flags).
 
-```C
+```java
 const int MAX_TASKS = 2
 const int MAX_TIME = 1000
 const int TIMESLOT = 10
