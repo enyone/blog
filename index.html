@@ -5,5 +5,5 @@ layout: default
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
   {{ post.excerpt }}
-  <a href="{{ post.url }}">Read more...</a>
+  <p><a href="{{ post.url }}">Read more...</a></p><br/>
 {% endfor %}
