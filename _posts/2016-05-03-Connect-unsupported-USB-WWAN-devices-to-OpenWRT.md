@@ -1,4 +1,4 @@
-# Configuring USB WWAN devices to OpenWRT
+# Connect unsupported USB WWAN devices to OpenWRT
 
 I used Huawei E5377 while doing this and assumed you should have basic GNU/Linux and USB knowledge.
 
