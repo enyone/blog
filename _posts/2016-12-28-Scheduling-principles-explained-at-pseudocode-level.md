@@ -2,7 +2,7 @@
 
 Most operating systems (like Linux) provides you the scheduler and signaling out of the box but you really should take these hints when dealing with embedded systems like RISC microcontrollers where there is no operating system present.
 
-*end TL;DR*
+end of TL;DR so now go and read...
 
 A goal is to gain as much profitable thread time with most little code complexity as possible.
 
