@@ -252,12 +252,6 @@ You should now understand how scheduling with signaling works.
 
 Now go away and maybe read more advanced scheduler code from Linux kernel who knows why:
 
-https://github.com/torvalds/linux/blob/master/kernel/sched/core.c
+[/kernel/sched/core.c](https://github.com/torvalds/linux/blob/master/kernel/sched/core.c)
 
-Also take a look at different scheduling disciplines from Wikipedia:
-
-https://en.wikipedia.org/wiki/Scheduling_(computing)#Scheduling_disciplines
-
-and Posix signals:
-
-https://en.wikipedia.org/wiki/Unix_signal#POSIX_signals
+Also take a look at different [scheduling disciplines](https://en.wikipedia.org/wiki/Scheduling_(computing)#Scheduling_disciplines) and [POSIX signals](https://en.wikipedia.org/wiki/Unix_signal#POSIX_signals) from Wikipedia.
