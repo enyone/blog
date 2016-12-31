@@ -1,6 +1,8 @@
 # Scheduling principles explained at pseudocode level
 
-*TL;DR Most operating systems (like Linux) provides you the scheduler and signaling out of the box but you really should take these hints when dealing with embedded systems like RISC microcontrollers where there is no operating system present.*
+Most operating systems (like Linux) provides you the scheduler and signaling out of the box but you really should take these hints when dealing with embedded systems like RISC microcontrollers where there is no operating system present.
+
+*end TL;DR*
 
 A goal is to gain as much profitable thread time with most little code complexity as possible.
 
@@ -241,7 +243,7 @@ There are real-time operating systems present (like RTLinux). Schedulers of thos
 
 Last pseudo-scheduler example in this article is far from being perfect. Do not use it. **Make it better.**
 
-*TL;DR Most operating systems (like Linux) provides you the scheduler and signaling out of the box but you really should take these hints when dealing with embedded systems like RISC microcontrollers where there is no operating system present.*
+TL;DR Most operating systems (like Linux) provides you the scheduler and signaling out of the box but you really should take these hints when dealing with embedded systems like RISC microcontrollers where there is no operating system present.
 
 What next
 ---
