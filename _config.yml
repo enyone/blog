@@ -7,7 +7,7 @@ twitter: tykkala
 paginate: 5
 url: "blog.rainio.org"
 permalink: /:title
-excerpt_separator: [//]: <> (cut)
+excerpt_separator: <!--more-->
 
 gems:
   - jekyll-sitemap
