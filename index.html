@@ -5,6 +5,6 @@ layout: default
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
   {{ post.excerpt }}
-  <small>written at {{ page.date }}</small>
+  <small>written at {{ post.date | date: "%Y-%m-%d" }}</small>
   <p><a href="{{ post.url }}">Read more...</a></p><br/>
 {% endfor %}
