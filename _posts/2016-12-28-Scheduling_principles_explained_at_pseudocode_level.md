@@ -2,6 +2,8 @@
 
 *TL;DR Most operating systems (like Linux) provides you the scheduler and signaling out of the box but you really should take these hints when dealing with embedded systems like RISC microcontrollers where there is no operating system present.*
 
+[//]: <> (cut)
+
 A goal is to gain as much profitable thread time with most little code complexity as possible.
 
 * thread time is calculated during one full led blink cycle (on-off).
