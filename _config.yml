@@ -1,0 +1,11 @@
+description: This is my blog. Nothing more.
+authors: Juho Tykkälä
+theme: jekyll-theme-hacker
+twitter: tykkala
+
+paginate: 5
+url: "blog.rainio.org"
+permalink: /:title
+
+gems:
+  - jekyll-sitemap
