@@ -1,8 +1,3 @@
----
-title: The Blog
-layout: post
----
-
 # The Blog
 A repository containing pages and sources of my blog. Nothing more.
 
