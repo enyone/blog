@@ -1,7 +1,7 @@
 title: The Blog of Juho
 description: This is my blog. Nothing more.
 authors: Juho Tykkälä
-theme: jekyll-theme-minimal
+theme: jekyll-theme-slate
 twitter: tykkala
 
 paginate: 5
