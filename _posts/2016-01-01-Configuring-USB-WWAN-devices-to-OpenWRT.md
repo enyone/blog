@@ -69,7 +69,11 @@ NoDriverLoading=1
 
 Then reboot your OpenWRT device and check that everything starts as expected.
 
+
+
 *Thanks to GitHub user CRImier pointing out the next thing...*
+
+
 
 It seems that OpenWRT 15.05 uses a file named "/etc/usb-mode.json". In that case, add the following section to it:
 
