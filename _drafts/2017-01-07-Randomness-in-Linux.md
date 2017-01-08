@@ -77,7 +77,7 @@ Linux kernel maintains an **[entropy](https://en.wikipedia.org/wiki/Entropy) poo
 I'm not going into details on this but will say that at least mouse movements and keyboard presses
 are used when pushing environment related true random bits into pool.*
 
-To check how much data is available in this pool:
+To check how much bits are available in this pool:
 ```sh
 # This read-only file gives the available entropy.
 # Normally, this will be 4096 (bits), a full entropy pool.
