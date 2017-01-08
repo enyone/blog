@@ -1,6 +1,7 @@
 # Randomness in Linux
 
 Majority of web pages and blog posts I've read suggests to use `/dev/urandom`.
+
 I would say this is stupid advice.
 
 Doing random things on purpose is very difficult. Especially with electronics. Things
