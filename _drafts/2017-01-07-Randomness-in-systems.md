@@ -85,7 +85,8 @@ cat /proc/sys/kernel/random/entropy_avail
 
 Linux kernel provides you pseudorandom data derived from the content of this entropy pool. There is
 file called `/dev/random` which is not a static file but a file provided by the kernel itself. Every
-time you read from this file kernel will give you pseudorandom data from its entropy pool.
+time you read from this file kernel will give you pseudorandom data derived from the content of its
+entropy pool.
 
 ```sh
 # Read first 10 bytes and present as base64 encoded
