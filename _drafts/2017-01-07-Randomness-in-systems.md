@@ -65,16 +65,9 @@ Randomness in operating systems
 Instead of starting to create your own pseudorandom generator nearly all operating
 systems provide the source of pseudorandomness.
 
-For example GNU/Linux kernel provides you the source of pseudorandomness:
+**GNU/Linux**
 
-```sh
-# Read first 10 bytes and present as base64 encoded
-head -c 10 /dev/random | base64 
-xlQ+BV9CMUJbnw==
-```
-There is that file called `/dev/random` which is not a static file but a file provided by the kernel itself. Every time you read from this file kernel will give you pseudorandom data from its **entropy pool**.
-
-From where data to this pool is then obtained? As Linux is open source you can start reading:
+Linux kernel maintains an **entropy pool**. From where data to this pool is obtained, you can start reading:
 
 [/drivers/char/random.c](https://github.com/torvalds/linux/blob/master/drivers/char/random.c)
 
@@ -86,4 +79,16 @@ To check how much data is available in this pool:
 # Normally, this will be 4096 (bits), a full entropy pool.
 cat /proc/sys/kernel/random/entropy_avail
 859
+```
+
+**/dev/random**
+
+Linux kernel provides you pseudorandom data derived from the content of this entropy pool. There is
+file called `/dev/random` which is not a static file but a file provided by the kernel itself. Every
+time you read from this file kernel will give you pseudorandom data from its entropy pool.
+
+```sh
+# Read first 10 bytes and present as base64 encoded
+head -c 10 /dev/random | base64 
+xlQ+BV9CMUJbnw==
 ```
