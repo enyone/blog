@@ -128,3 +128,5 @@ Majority of web pages and blog posts I've read suggests to use `/dev/urandom`. I
 
 When the best available quality is needed `/dev/random` should be used always even with the cost of blocking.
 One example is when generating keys **to be used in cryptographic algorithms**.
+
+When there is the absolute need to be non-blocking even with the cost of lower quality randomness `/dev/urandom` can be used. But still be very careful when making the decision.
