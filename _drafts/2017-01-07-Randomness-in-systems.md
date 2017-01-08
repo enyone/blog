@@ -8,9 +8,9 @@ end of TL;DR so now go and read...
 Sources of randomness
 ---
 
-> _Randomness is the lack of pattern or predictability in events._
+> *Randomness is the lack of pattern or predictability in events.*
 
-> _Wikipedia_
+> *Wikipedia*
 
 There are three generally accepted sources of randomness:
 * environment the system is working in
@@ -24,7 +24,7 @@ The power of random things is that those things are really unpredictable. In tru
 random events no one is able to predict the nature of next event. These events can be
 random in time, intensity, but often called as being stochastic.
 
-> _https://en.wikipedia.org/wiki/Stochastic_
+> *https://en.wikipedia.org/wiki/Stochastic*
 
 Randomness in computer systems
 ---
@@ -38,7 +38,7 @@ int getRandomNumber()
            // guaranteed to be random
 }
 ```
-> _http://xkcd.com/221/_
+> *http://xkcd.com/221/*
 
 While its output being truly random above function is still quite unusable when
 unpredictability is needed and unpredictability is always needed.
@@ -54,10 +54,10 @@ day. Things that are too expensive to predict today can be cheap enough tomorrow
 Thus unpredictable system must stay unpredictable enough also in the future, not
 forever but long enough in relation to value.
 
-_This is pure analogy to information security as data has always a value and if
+*This is pure analogy to information security as data has always a value and if
 it is encrypted using algorithms that are relaying randomness (and most often are)
 it is only a matter of time and energy when the random event behind this encryption
-will be predicted and data to become public._
+will be predicted and data to become public.*
 
 Randomness in operating systems
 ---
@@ -71,7 +71,7 @@ Linux kernel maintains an **entropy pool**. From where data to this pool is obta
 
 [/drivers/char/random.c](https://github.com/torvalds/linux/blob/master/drivers/char/random.c)
 
-_There is that `push_to_pool()` function which is called from various locations in the kernel. Not going into details on this._
+*There is that `push_to_pool()` function which is called from various locations in the kernel. Not going into details on this.*
 
 To check how much data is available in this pool:
 ```sh
@@ -93,3 +93,17 @@ entropy pool.
 head -c 10 /dev/random | base64 
 xlQ+BV9CMUJbnw==
 ```
+
+There is one nasty behaviour of `/dev/random`; every time entropy pool drains itself empty all read
+operations to `/dev/random` will block (io-wait) until enough data is pushed and becoming available
+from the entropy pool to derive more random data.
+
+The quality (unpredictability) of pseudorandomness is better when blocking until enough data is pushed
+and becoming available from the entropy pool.
+
+**/dev/urandom**
+
+When **lower quality** (more predictable) pseudorandom data can be used there is `/dev/urandom` available
+for that purpose. Read operations to this file will not block (io-wait) when entropy pool drains
+itself empty. Instead kernel will create **lower quality** pseudorandom data to substitute better quality
+data derived from the content of its entropy pool.
