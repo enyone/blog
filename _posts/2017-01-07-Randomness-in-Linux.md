@@ -34,7 +34,7 @@ Randomness in computer systems
 Everyone should know this meme from xkcd:
 
 ```java
-# from http://xkcd.com/221/
+// from http://xkcd.com/221/
 int getRandomNumber()
 {
   return 4 // chosen by fair dice roll
