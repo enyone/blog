@@ -1,6 +1,6 @@
 # Randomness in Linux
 
-Majority of web pages and blog posts I've read suggests to use `/dev/urandom`. 1)
+Majority of web pages and blog posts 1) I've read suggests to use `/dev/urandom`.
 
 I would say this generalization should never be made.
 
@@ -158,4 +158,4 @@ Some clarifications and more references added:
 
 As both `/dev/random` and `/dev/urandom` [backs](https://en.wikipedia.org/wiki//dev/random#Linux) to the [same](https://en.wikipedia.org/wiki/Salsa20#ChaCha_variant) PRNG at kernel (version 4.8 and newer) level it is left out of the scope. I would say it is a complete different story whether you should run your pseudo-random data through some algorithm X before using it in cryptography.
 
-You should be more focused to the fact that even CSPRNG -backed sources does not magically create better entropy than the entropy of the source it uses has. At least `/dev/random` ensures there is enough entropy at the time of read. Linux should not remove it as a legacy thingie.
+You should be more focused to the fact that even CSPRNG -backed sources does not magically create better entropy than the entropy of the source it uses has. At least `/dev/random` ensures there is enough estimated entropy at the time of read. Linux should not remove it as a legacy thingie.
