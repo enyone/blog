@@ -76,7 +76,7 @@ Linux kernel maintains an **entropy pool**. From where data to this pool is obta
 
 *There is that `push_to_pool()` function which is called from various locations in the kernel.
 I'm not going into details on this but will say that at least mouse movements and keyboard presses
-are used when pushing environment related random bits to pool.*
+are used when pushing environment related true random bits into pool.*
 
 To check how much data is available in this pool:
 ```sh
