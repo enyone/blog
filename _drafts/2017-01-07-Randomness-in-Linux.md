@@ -113,9 +113,10 @@ and becoming available from the entropy pool.
 **/dev/urandom**
 
 When **lower quality** (more predictable) pseudorandom data can be used there is `/dev/urandom` available
-for that purpose. Read operations to this file will not block (io-wait) when entropy pool drains
-itself empty. Instead kernel will create **lower quality** pseudorandom data to substitute better quality
-data derived from the content of its entropy pool.
+for that purpose. Data is again derived from the content of this entropy pool but read operations to this
+file will not block (io-wait) when entropy pool drains itself empty. Instead kernel will create
+**lower quality** pseudorandom data to substitute better quality data derived from the content of its
+entropy pool.
 
 **Which one to use?**
 
