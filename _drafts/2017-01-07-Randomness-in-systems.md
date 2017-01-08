@@ -51,12 +51,13 @@ unpredictable enough.
 
 Also time should be taken into account as calculating power comes cheaper day by
 day. Things that are too expensive to predict today can be cheap enough tomorrow.
-Thus unpredictable system must stay unpredictable enough also
+Thus unpredictable system must stay unpredictable enough also in the future, not
+forever but long enough in relation to value.
 
-This is true analogy to information security as data has always a value and if
+_This is pure analogy to information security as data has always a value and if
 it is encrypted using algorithms that are relaying randomness (and most often are)
 it is only a matter of time and energy when the random event behind this encryption
-will be predicted and data to become public.
+will be predicted and data to become public._
 
 Randomness in operating systems
 ---
