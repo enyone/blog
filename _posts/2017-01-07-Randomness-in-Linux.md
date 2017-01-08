@@ -83,7 +83,7 @@ To check how much bits are available in this pool:
 ```sh
 # This read-only file gives the available entropy.
 # Normally, this will be 4096 (bits), a full entropy pool.
-cat /proc/sys/kernel/random/entropy_avail
+$ cat /proc/sys/kernel/random/entropy_avail
 859
 ```
 
@@ -108,8 +108,8 @@ entropy pool.
 
 ```sh
 # Read first 32 bytes and present as base64 encoded
-head -c 32 /dev/random | base64
-xlQ+BV9CMUJbnw==
+$ head -c 32 /dev/random | base64
+UN8ENY95SVz2rBr0KmmhuP3yffm2qd8zqbX8MQSDnYQ=
 ```
 
 There is one nasty behavior of `/dev/random`; every time entropy pool drains itself empty all read
