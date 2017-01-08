@@ -92,7 +92,8 @@ pool size.
 External random sources
 ---
 
-Linux kernel supports external sources to be used as random bit sources of the entropy pool. This
+Using [different software utilities](https://wiki.archlinux.org/index.php/Rng-tools) Linux kernel can become
+aware of [external hardware](https://en.wikipedia.org/wiki/Hardware_random_number_generator) random bit sources and use these as a source of the entropy pool itself. This
 provides even better entropy in the pool and thus to create better (more unpredictable) pseudorandom data.
 
 The case of /dev/random
