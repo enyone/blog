@@ -14,7 +14,7 @@ end of TL;DR so now go and read...
 Sources of randomness
 ---
 
-> *Randomness is the lack of pattern or predictability in events. -Wikipedia*
+> *Randomness is the lack of pattern or predictability in events. -[Wikipedia](https://en.wikipedia.org/wiki/Randomness)*
 
 There are three generally accepted sources of randomness:
 * environment the system is working in
