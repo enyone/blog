@@ -81,6 +81,10 @@ cat /proc/sys/kernel/random/entropy_avail
 859
 ```
 
+Every time when the content of this entropy pool is used to derive pseudorandom data that content is
+removed from the pool and more content needs to be pushed back with `push_to_pool()` to maintain decent
+pool size.
+
 **/dev/random**
 
 Linux kernel provides you pseudorandom data derived from the content of this entropy pool. There is
