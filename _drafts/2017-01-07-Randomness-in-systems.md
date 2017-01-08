@@ -26,7 +26,7 @@ random in time, intensity, but often called as being stochastic.
 
 > _https://en.wikipedia.org/wiki/Stochastic_
 
-Randomness in programming
+Randomness in computer systems
 ---
 
 Everyone should know this meme from xkcd:
@@ -49,7 +49,16 @@ next event. As long as energy needed for predicting things is higher than the
 value of the achievement of successful prediction we can say system is
 unpredictable enough.
 
-Randomness in Linux
+Also time should be taken into account as calculating power comes cheaper day by
+day. Things that are too expensive to predict today can be cheap enough tomorrow.
+Thus unpredictable system must stay unpredictable enough also
+
+This is true analogy to information security as data has always a value and if
+it is encrypted using algorithms that are relaying randomness (and most often are)
+it is only a matter of time and energy when the random event behind this encryption
+will be predicted and data to become public.
+
+Randomness in operating systems
 ---
 
 Instead of starting to create your own pseudorandom generator nearly all operating
