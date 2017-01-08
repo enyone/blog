@@ -67,7 +67,7 @@ systems provide the source of pseudorandomness.
 
 For example GNU/Linux kernel provides you the source of pseudorandomness:
 
-```
+```sh
 # Read 10 pseudorandom characters and present as base64 encoded
 head -c 10 /dev/random | base64 
 xlQ+BV9CMUJbnw==
