@@ -43,6 +43,12 @@ int getRandomNumber()
 While its output being truly random above function is still quite unusable when
 unpredictability is needed and unpredictability is really needed.
 
+In computer system high enough unpredictability is often as useful as full
+unpredictability. It is only a matter of energy (or value $$$) needed to predict
+next event. As long as energy needed for predicting things is higher than the
+value of the achievement of successful prediction we can say system is
+unpredictable enough.
+
 Randomness in Linux
 ---
 
