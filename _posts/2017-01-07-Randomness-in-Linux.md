@@ -107,8 +107,8 @@ time you read from this file kernel will give you pseudo-random data derived fro
 entropy pool.
 
 ```sh
-# Read first 10 bytes and present as base64 encoded
-head -c 10 /dev/random | base64 
+# Read first 32 bytes and present as base64 encoded
+head -c 32 /dev/random | base64
 xlQ+BV9CMUJbnw==
 ```
 
