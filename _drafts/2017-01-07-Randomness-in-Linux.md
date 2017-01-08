@@ -25,9 +25,7 @@ mathematical source of true randomness.
 
 The power of random things is that those things are really unpredictable. In truly
 random events no one is able to predict the nature of next event. These events can be
-random in time, intensity, but often called as being stochastic.
-
-> *https://en.wikipedia.org/wiki/Stochastic*
+random in time, intensity, but often called as being [stochastic](https://en.wikipedia.org/wiki/Stochastic).
 
 Randomness in computer systems
 ---
@@ -71,15 +69,13 @@ systems provide the source of pseudorandomness.
 Randomness in GNU/Linux
 ---
 
-Linux kernel maintains an **entropy pool**. From where data to this pool is obtained, you can start reading:
+Linux kernel maintains an **[entropy](https://en.wikipedia.org/wiki/Entropy) pool**. From where data to this pool is obtained, you can start reading:
 
 [/drivers/char/random.c](https://github.com/torvalds/linux/blob/master/drivers/char/random.c)
 
 *There is that `push_to_pool()` function which is called from various locations in the kernel.
 I'm not going into details on this but will say that at least mouse movements and keyboard presses
 are used when pushing environment related true random bits into pool.*
-
-> *https://en.wikipedia.org/wiki/Entropy*
 
 To check how much data is available in this pool:
 ```sh
@@ -92,6 +88,12 @@ cat /proc/sys/kernel/random/entropy_avail
 Every time when the content of this entropy pool is used to derive pseudorandom data that content is
 removed from the pool and more content needs to be pushed back with `push_to_pool()` to maintain decent
 pool size.
+
+External random sources
+---
+
+Linux kernel supports external sources to be used as random bit sources of the entropy pool. This
+provides even better entropy in the pool and thus to create better (more unpredictable) pseudorandom data.
 
 The case of /dev/random
 ---
