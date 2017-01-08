@@ -68,7 +68,16 @@ systems provide the source of pseudorandomness.
 For example GNU/Linux kernel provides you the source of pseudorandomness:
 
 ```sh
-# Read 10 pseudorandom characters and present as base64 encoded
+# Read first 10 bytes and present as base64 encoded
 head -c 10 /dev/random | base64 
 xlQ+BV9CMUJbnw==
+```
+There is that file called `/dev/random` which is not a static file but a file provided by the kernel itself. Every time you read from this file kernel will give you pseudorandom data from its **entropy pool**.
+
+From where data to this pool is then obtained?
+
+To check how much data is available from this pool you can read:
+```sh
+cat /proc/sys/kernel/random/entropy_avail
+859
 ```
