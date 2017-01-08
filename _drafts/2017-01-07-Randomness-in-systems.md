@@ -74,7 +74,11 @@ xlQ+BV9CMUJbnw==
 ```
 There is that file called `/dev/random` which is not a static file but a file provided by the kernel itself. Every time you read from this file kernel will give you pseudorandom data from its **entropy pool**.
 
-From where data to this pool is then obtained?
+From where data to this pool is then obtained? As Linux is open source you can start reading:
+
+[/drivers/char/random.c](https://github.com/torvalds/linux/blob/master/drivers/char/random.c)
+
+_There is that `push_to_pool()` function which is called from various locations in the kernel. Not going into details on this._
 
 To check how much data is available in this pool:
 ```sh
