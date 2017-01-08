@@ -49,7 +49,7 @@ next event. As long as energy needed for predicting things is higher than the
 value of the achievement of successful prediction we can say system is
 unpredictable enough.
 
-Also time should be taken into account as calculating power comes cheaper day by
+Also time should be taken into account because calculating power comes cheaper day by
 day. Things that are too expensive to predict today can be cheap enough tomorrow.
 Thus unpredictable system must stay unpredictable enough also in the future, not
 forever but long enough in relation to value.
@@ -64,3 +64,11 @@ Randomness in operating systems
 
 Instead of starting to create your own pseudorandom generator nearly all operating
 systems provide the source of pseudorandomness.
+
+For example GNU/Linux kernel provides you the source of pseudorandomness:
+
+```
+# Read 10 pseudorandom characters and present as base64 encoded
+head -c 10 /dev/random | base64 
+xlQ+BV9CMUJbnw==
+```
