@@ -68,7 +68,8 @@ Randomness in operating systems
 Instead of starting to create your own pseudorandom generator nearly all operating
 systems provide the source of pseudorandomness.
 
-**GNU/Linux**
+Randomness in GNU/Linux
+---
 
 Linux kernel maintains an **entropy pool**. From where data to this pool is obtained, you can start reading:
 
@@ -90,7 +91,8 @@ Every time when the content of this entropy pool is used to derive pseudorandom 
 removed from the pool and more content needs to be pushed back with `push_to_pool()` to maintain decent
 pool size.
 
-**/dev/random**
+The case of /dev/random
+---
 
 Linux kernel provides you pseudorandom data derived from the content of this entropy pool. There is
 file called `/dev/random` which is not a static file but a file provided by the kernel itself. Every
@@ -104,13 +106,14 @@ xlQ+BV9CMUJbnw==
 ```
 
 There is one nasty behaviour of `/dev/random`; every time entropy pool drains itself empty all read
-operations to `/dev/random` will block (io-wait) until enough data is pushed and becoming available
+operations to `/dev/random` will **block** (io-wait) until enough data is pushed and becoming available
 from the entropy pool to derive more random data.
 
 The quality (unpredictability) of pseudorandomness is better when blocking until enough data is pushed
 and becoming available from the entropy pool.
 
-**/dev/urandom**
+The case of /dev/urandom
+---
 
 When **lower quality** (more predictable) pseudorandom data can be used there is `/dev/urandom` available
 for that purpose. Data is again derived from the content of this entropy pool but read operations to this
@@ -118,7 +121,8 @@ file will not block (io-wait) when entropy pool drains itself empty. Instead ker
 **lower quality** pseudorandom data to substitute better quality data derived from the content of its
 entropy pool.
 
-**Which one to use?**
+Which one to use?
+---
 
 Majority of web pages and blog posts I've read suggests to use `/dev/urandom`. I would say this is stuppid advice.
 
