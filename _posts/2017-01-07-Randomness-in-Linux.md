@@ -31,10 +31,9 @@ random in time, intensity, but often called as being [stochastic](https://en.wik
 Randomness in computer systems
 ---
 
-Everyone should know this meme from xkcd:
+Some of you might know this meme from [xkcd](http://xkcd.com/221/):
 
 ```java
-// from http://xkcd.com/221/
 int getRandomNumber()
 {
   return 4 // chosen by fair dice roll
