@@ -1,3 +1,6 @@
+Majority of web pages and blog posts I've read suggests to use `/dev/urandom`.
+I would say this is stuppid advice.
+
 Doing random things on purpose is very difficult. Especially with electronics. Things
 may appear fully random but often are not in fact. Still randomness is key part in
 important practices like cryptography. Thus it is important to understand terms
@@ -71,7 +74,9 @@ Linux kernel maintains an **entropy pool**. From where data to this pool is obta
 
 [/drivers/char/random.c](https://github.com/torvalds/linux/blob/master/drivers/char/random.c)
 
-*There is that `push_to_pool()` function which is called from various locations in the kernel. Not going into details on this.*
+*There is that `push_to_pool()` function which is called from various locations in the kernel.
+I'm not going into details on this but will say that at least mouse movements and keyboard presses
+are used when pushing environment related random bits to pool.*
 
 To check how much data is available in this pool:
 ```sh
@@ -111,3 +116,9 @@ When **lower quality** (more predictable) pseudorandom data can be used there is
 for that purpose. Read operations to this file will not block (io-wait) when entropy pool drains
 itself empty. Instead kernel will create **lower quality** pseudorandom data to substitute better quality
 data derived from the content of its entropy pool.
+
+**Which one to use?**
+
+Majority of web pages and blog posts I've read suggests to use `/dev/urandom`. I would say this is stuppid advice.
+
+When the best available quality is needed `/dev/random` should be used always even with the cost of blocking.
