@@ -67,7 +67,7 @@ Randomness in operating systems
 Instead of starting to create your own pseudo-random generator nearly all operating
 systems provide the source of pseudo-randomness.
 
-Randomness in GNU/Linux
+Again, randomness in Linux
 ---
 
 Linux kernel maintains an **[entropy](https://en.wikipedia.org/wiki/Entropy) pool**. From where data to this pool is obtained, you can start reading:
