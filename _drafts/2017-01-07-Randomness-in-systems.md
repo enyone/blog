@@ -1,8 +1,7 @@
 Doing random things on purpose is very difficult. Especially with electronics. Things
-may appear fully random but often are not in fact.
-
-Still randomness is key part in important practices like cryptography. Thus it is
-important to understand terms **random** and **randomness**.
+may appear fully random but often are not in fact. Still randomness is key part in
+important practices like cryptography. Thus it is important to understand terms
+**random** and **randomness**.
 
 end of TL;DR so now go and read...
 
