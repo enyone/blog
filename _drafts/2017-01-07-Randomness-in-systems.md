@@ -76,8 +76,10 @@ There is that file called `/dev/random` which is not a static file but a file pr
 
 From where data to this pool is then obtained?
 
-To check how much data is available from this pool you can read:
+To check how much data is available in this pool:
 ```sh
+# This read-only file gives the available entropy.
+# Normally, this will be 4096 (bits), a full entropy pool.
 cat /proc/sys/kernel/random/entropy_avail
 859
 ```
