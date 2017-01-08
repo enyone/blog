@@ -14,9 +14,7 @@ end of TL;DR so now go and read...
 Sources of randomness
 ---
 
-> *Randomness is the lack of pattern or predictability in events.*
-
-> *Wikipedia*
+> *Randomness is the lack of pattern or predictability in events. -Wikipedia*
 
 There are three generally accepted sources of randomness:
 * environment the system is working in
@@ -36,13 +34,13 @@ Randomness in computer systems
 Everyone should know this meme from xkcd:
 
 ```java
+# from http://xkcd.com/221/
 int getRandomNumber()
 {
   return 4 // chosen by fair dice roll
            // guaranteed to be random
 }
 ```
-> *http://xkcd.com/221/*
 
 While its output being truly random above function is still quite unusable when
 unpredictability is needed and unpredictability is always needed.
@@ -81,6 +79,7 @@ I'm not going into details on this but will say that at least mouse movements an
 are used when pushing environment related true random bits into pool.*
 
 To check how much bits are available in this pool:
+
 ```sh
 # This read-only file gives the available entropy.
 # Normally, this will be 4096 (bits), a full entropy pool.
