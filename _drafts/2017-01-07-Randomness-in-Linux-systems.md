@@ -3,7 +3,7 @@
 > _Wikipedia_
 
 Doing random things on purpose is very difficult. Especially with electronics. Things
-may appear asfully random but still are not.
+may appear fully random but often are not in fact.
 
 Still randomness is key part in important practices like cryptography. Thus it is
 important to understand terms **random** and **randomness**.
@@ -33,7 +33,13 @@ int getRandomNumber()
 > _http://xkcd.com/221/_
 
 While its output being truly random above function is still quite unusable when
-unpredictability is needed. And unpredictability is really needed.
+unpredictability is needed. And unpredictability is really needed. The power of random
+things is that those things are really unpredictable. In truly random events no one
+is able to predict the nature of next event.
+
+These events can be random in time, intensity, but often called as being stochastic.
+
+> _https://en.wikipedia.org/wiki/Stochastic_
 
 Randomness in Linux
 ---
