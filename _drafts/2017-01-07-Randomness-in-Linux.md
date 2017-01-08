@@ -127,4 +127,4 @@ Which one to use?
 Majority of web pages and blog posts I've read suggests to use `/dev/urandom`. I would say this is stuppid advice.
 
 When the best available quality is needed `/dev/random` should be used always even with the cost of blocking.
-One example is when generating keys **to be used in cryptograpic** algorithms.
+One example is when generating keys **to be used in cryptographic algorithms**.
