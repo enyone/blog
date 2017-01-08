@@ -41,7 +41,7 @@ int getRandomNumber()
 > _http://xkcd.com/221/_
 
 While its output being truly random above function is still quite unusable when
-unpredictability is needed and unpredictability is really needed.
+unpredictability is needed and unpredictability is always needed.
 
 In computer system high enough unpredictability is often as useful as full
 unpredictability. It is only a matter of energy (or value $$$) needed to predict
