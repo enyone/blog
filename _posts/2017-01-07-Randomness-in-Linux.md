@@ -133,6 +133,8 @@ Which one to use?
 
 Majority of web pages and blog posts I've read suggests to use `/dev/urandom`. I would say this is stupid advice.
 
+Some versions of man page [random(4)](https://linux.die.net/man/4/random) states usage limitations while [some other](http://man7.org/linux/man-pages/man4/random.4.html) versions effectively does not. Be on the watch of what version/from what source you are reading.
+
 When the best available quality is needed `/dev/random` should be used always even with the cost of blocking.
 One example is when generating keys **to be used in cryptographic algorithms**.
 
