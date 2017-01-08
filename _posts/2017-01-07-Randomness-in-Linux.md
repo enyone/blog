@@ -1,6 +1,6 @@
 # Randomness in Linux
 
-Majority of web pages and blog posts I've read suggests to use `/dev/urandom`.
+Majority of web pages and blog posts I've read suggests to use `/dev/urandom`. 1)
 
 I would say this generalization should never be made.
 
@@ -133,7 +133,7 @@ Which one to use?
 
 Majority of web pages and blog posts I've read suggests to use `/dev/urandom`. I would say this generalization should never be made.
 
-When the best available quality is needed `/dev/random` should be used always even with the cost of blocking.
+When the best available quality is needed `/dev/random` should be used always even with the cost of blocking. 2)
 One example is when generating keys **to be used in cryptographic algorithms**.
 
 When there is the absolute need to be non-blocking (in cryptography) even with the cost of lower quality randomness `/dev/urandom` can be used. But still be very careful when making the decision.
@@ -148,11 +148,11 @@ Some clarifications and more references added:
 
 > *Majority of web pages and blog posts I've read suggests to use `/dev/urandom`.*
 
-Most of them refer to [this article](http://www.2uo.de/myths-about-urandom/)
+1) Most of them refer to [this article](http://www.2uo.de/myths-about-urandom/)
 
 > _When the best available quality is needed `/dev/random` should be used always..._
 
-For sure `/dev/random` should NOT be used always but only "when the best available ~~quality~~ entropy is needed". Largest variation in people opinions seems to be how big "quality difference" there is between `/dev/random` and `/dev/urandom`. Some would say there is none but I would say there is enough to write this.
+2) For sure `/dev/random` should NOT be used always but only "when the best available ~~quality~~ entropy is needed". Largest variation in people opinions seems to be how big "quality difference" there is between `/dev/random` and `/dev/urandom`. Some would say there is none but I would say there is enough to write this.
 
 > _The absence of term [**(CS)PRNG**](https://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator)_
 
