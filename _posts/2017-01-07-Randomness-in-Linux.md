@@ -147,11 +147,13 @@ For whatever else from temporary filename creation to generating "almost unique"
 
 **Majority of web pages and blog posts I've read suggests to use `/dev/urandom`.**
 
-#1 Most of them refer to [this article](http://www.2uo.de/myths-about-urandom/)
+##### 1
+Most of them refer to [this article](http://www.2uo.de/myths-about-urandom/)
 
 **When the best available quality is needed `/dev/random` should be used always...**
 
-#2 For sure `/dev/random` should NOT be used always but only "when the best available ~~quality~~ entropy is needed". Largest variation in people opinions seems to be how big "quality difference" there is between `/dev/random` and `/dev/urandom`. Some would say there is none but I would say there is enough to write this.
+##### 2
+For sure `/dev/random` should NOT be used always but only "when the best available ~~quality~~ entropy is needed". Largest variation in people opinions seems to be how big "quality difference" there is between `/dev/random` and `/dev/urandom`. Some would say there is none but I would say there is enough to write this.
 
 **The absence of term [CSPRNG](https://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator)**
 
