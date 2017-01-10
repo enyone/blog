@@ -142,20 +142,23 @@ For whatever else from temporary filename creation to generating "almost unique"
 
 *Some versions of man page [random(4)](https://linux.die.net/man/4/random) states usage limitations while [some other](http://man7.org/linux/man-pages/man4/random.4.html) versions effectively does not. Be on the watch of what version/from what source you are reading.*
 
-**2017-01-08, edit:**
+2017-01-08 edit
+---
 
-Some clarifications and more references added:
+**Majority of web pages and blog posts I've read suggests to use `/dev/urandom`.**
 
-> *Majority of web pages and blog posts I've read suggests to use `/dev/urandom`.*
+1)
 
-1) Most of them refer to [this article](http://www.2uo.de/myths-about-urandom/)
+Most of them refer to [this article](http://www.2uo.de/myths-about-urandom/)
 
-> _When the best available quality is needed `/dev/random` should be used always..._
+**When the best available quality is needed `/dev/random` should be used always...**
 
-2) For sure `/dev/random` should NOT be used always but only "when the best available ~~quality~~ entropy is needed". Largest variation in people opinions seems to be how big "quality difference" there is between `/dev/random` and `/dev/urandom`. Some would say there is none but I would say there is enough to write this.
+2)
 
-> _The absence of term [**(CS)PRNG**](https://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator)_
+For sure `/dev/random` should NOT be used always but only "when the best available ~~quality~~ entropy is needed". Largest variation in people opinions seems to be how big "quality difference" there is between `/dev/random` and `/dev/urandom`. Some would say there is none but I would say there is enough to write this.
 
-As both `/dev/random` and `/dev/urandom` [backs](https://en.wikipedia.org/wiki//dev/random#Linux) to the [same](https://en.wikipedia.org/wiki/Salsa20#ChaCha_variant) PRNG at kernel (version 4.8 and newer) level it is left out of the scope. I would say it is a complete different story whether you should run your pseudo-random data through some algorithm X before using it in cryptography.
+**The absence of term [**CSPRNG**](https://en.wikipedia.org/wiki/Cryptographically_secure_pseudorandom_number_generator)**
+
+As both `/dev/random` and `/dev/urandom` [backs](https://en.wikipedia.org/wiki//dev/random#Linux) to the [same](https://en.wikipedia.org/wiki/Salsa20#ChaCha_variant) (CS)PRNG at kernel (version 4.8 and newer) level it is left out of the scope. I would say it is a complete different story whether you should run your pseudo-random data through some algorithm X before using it in cryptography.
 
 You should be more focused to the fact that even CSPRNG -backed sources does not magically create better entropy than the entropy of the source it uses has. At least `/dev/random` ensures there is enough estimated entropy at the time of read. Linux should not remove it as a legacy thingie.
