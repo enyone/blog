@@ -46,6 +46,8 @@ $ dmesg|grep 'snd\|card'|cut -d']' -f2
 
 [Advanced Linux Sound Architecture](http://www.alsa-project.org/)
 
+Basically ALSA is just a bunch of kernel modules and sound card drivers. There is also useful command line utilities to make life easier with those kernel modules.
+
 **Note:** There is also other sound systems present in Linux world but ALSA is the most used currently.
 
 Outputs are called as **playback** devices in ALSA.
