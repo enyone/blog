@@ -219,15 +219,15 @@ $ pactl list modules
 Module #7
 	Name: module-alsa-card
 	Argument:	device_id="2"
-				name="usb-0d8c_USB_Sound_Device-00-Device"
-				card_name="alsa_card.usb-0d8c_USB_Sound_Device-00-Device"
-				namereg_fail=false
-				tsched=yes
-				fixed_latency_range=no
-				ignore_dB=no
-				deferred_volume=yes
-				use_ucm=yes
-				card_properties="module-udev-detect.discovered=1"
+			name="usb-0d8c_USB_Sound_Device-00-Device"
+			card_name="alsa_card.usb-0d8c_USB_Sound_Device-00-Device"
+			namereg_fail=false
+			tsched=yes
+			fixed_latency_range=no
+			ignore_dB=no
+			deferred_volume=yes
+			use_ucm=yes
+			card_properties="module-udev-detect.discovered=1"
 ```
 
 I would suggest for you to try.
@@ -269,15 +269,13 @@ My latency with default values.
 Latency: 103444 usec, configured 100000 usec
 ```
 
-..which is ~103ms
-
-And after changes.
+which is ~103ms, and next after changes.
 
 ```shell
 Latency: 19369 usec, configured 20000 usec
 ```
 
-..which is ~ 19ms
+which is ~19ms.
 
 #### Chopping audio
 
