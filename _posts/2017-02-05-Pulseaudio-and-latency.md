@@ -4,6 +4,8 @@ If you are Linux enthusiast and also are playing some instrument then you have p
 
 This blog post describes how to live with and manage Pulseaudio latency problems. For fast answer scroll directly to chapter [Positive effect on latency](#positive-effect-on-latency) as bellow is some leading information about Linux sound architecture
 
+end of TL;DR so now go and read...
+
 ## Linux sound architecture
 
 ### Kernel level
