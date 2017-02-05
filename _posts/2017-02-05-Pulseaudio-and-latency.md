@@ -1,6 +1,6 @@
 # Pulseaudio and latency
 
-If you are Linux enthusiast and also are playing some instrument then you have probably encountered issues with Pulseaudio latency.
+If you are a Linux enthusiast and are playing fps games or record audio of some musical instrument then you have probably encountered issues with Pulseaudio latency.
 
 This blog post describes how to live with and manage Pulseaudio latency problems. For fast answer scroll directly to chapter [Positive effect on latency](#positive-effect-on-latency) as bellow is some leading information about Linux sound architecture
 
