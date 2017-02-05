@@ -12,7 +12,7 @@ end of TL;DR so now go and read...
 
 Linux kernel has **snd** base module and on top of that other sound related modules can be built.
 
-```ini
+```shell
 $ lsmod|grep ^snd|cut -d' ' -f1
 snd_usb_audio
 snd_usbmidi_lib
@@ -32,7 +32,7 @@ snd
 
 Some of those modules creates log entries during activity or when loaded.
 
-```ini
+```shell
 $ dmesg|grep 'snd\|card'|cut -d']' -f2
  snd_hda_intel 0000:00:1b.0: irq 45 for MSI/MSI-X
  input: HDA Digital PCBeep as /devices/pci0000:00/0000:00:1b.0/sound/card0/hdaudioC0D0/input12
@@ -50,7 +50,7 @@ $ dmesg|grep 'snd\|card'|cut -d']' -f2
 
 Outputs are called as **playback** devices in ALSA.
 
-```ini
+```shell
 $ aplay -l
 **** List of PLAYBACK Hardware Devices ****
 card 0: PCH [HDA Intel PCH], device 0: CX20590 Analog [CX20590 Analog]
@@ -69,7 +69,7 @@ card 2: Device [USB Sound Device], device 0: USB Audio [USB Audio]
 
 Inputs are called as **capture** devices in ALSA.
 
-```ini
+```shell
 $ arecord -l
 **** List of CAPTURE Hardware Devices ****
 card 0: PCH [HDA Intel PCH], device 0: CX20590 Analog [CX20590 Analog]
@@ -87,7 +87,7 @@ card 2: Device [USB Sound Device], device 0: USB Audio [USB Audio]
 
 Streams in computing are constructed using **sources**, **flows**, and **sinks**.
 
-```ini
+```shell
 Source > Flow > Sink
 ```
 
@@ -105,7 +105,7 @@ As Pulseaudio is not kernel based and does not introduce new kernel modules, som
 
 ALSA card's inputs are presented as **sources** in Pulseaudio.
 
-```ini
+```shell
 $ pactl list sources short
 0	alsa_input.usb-Burr-Brown_from_TI_USB_Audio_CODEC-00-CODEC.analog-stereo
 		module-alsa-card.c	s16le 2ch 44100Hz	RUNNING
@@ -117,7 +117,7 @@ $ pactl list sources short
 
 ALSA card's outputs are presented as **sinks** in Pulseaudio.
 
-```ini
+```shell
 $ pactl list sinks short
 0	alsa_output.usb-0d8c_USB_Sound_Device-00-Device.iec958-stereo	
 		module-alsa-card.c	s16le 2ch 44100Hz	RUNNING
@@ -131,7 +131,7 @@ Every party described above adds own latency footprint into system. Linux kernel
 
 There is several ways to measure Pulseaudio latency. You cannot get rid of latency completely but sometimes default buffer sizes are too large and therefore cause worthless latency.
 
-```ini
+```shell
 $ pactl list sinks
 Sink #0
 	State: RUNNING
@@ -152,7 +152,7 @@ Sink #0
 
 Above sink details shows there is some latency present.
 
-```ini
+```shell
 Latency: 103758 usec, configured 100000 usec
 ```
 
@@ -162,7 +162,7 @@ There is **current** latency and **configured** latency present in every source 
 
 Several other Pulseaudio modules (other than just **module-alsa-card**) are present in this example setup.
 
-```ini
+```shell
 $ pactl list modules short|cut -d$'\t' -f2
 module-device-restore
 module-stream-restore
@@ -211,7 +211,7 @@ There is module **module-udev-detect** which searches ALSA sound cards present i
 
 For example one of my USB sound cards has.
 
-```ini
+```shell
 $ pactl list modules
 ...
 Module #7
@@ -230,7 +230,7 @@ Module #7
 
 I would suggest for you to try.
 
-```ini
+```shell
 tsched=no
 fixed_latency_range=yes
 fragments=1
@@ -239,13 +239,13 @@ fragment_size=15
 
 First, unload the module corresponding your desired sound card, #7 in my setup.
 
-```ini
+```shell
 $ pactl unload-module 7
 ```
 
 Then load it again with new parameter values.
 
-```ini
+```shell
 pactl load-module module-alsa-card \
  device_id="2" \
  name="usb-0d8c_USB_Sound_Device-00-Device" \
@@ -263,7 +263,7 @@ pactl load-module module-alsa-card \
 
 My latency with default values.
 
-```ini
+```shell
 Latency: 103444 usec, configured 100000 usec
 ```
 
@@ -271,7 +271,7 @@ Latency: 103444 usec, configured 100000 usec
 
 And after changes.
 
-```ini
+```shell
 Latency: 19369 usec, configured 20000 usec
 ```
 
@@ -285,25 +285,25 @@ If you audio starts to chop or stutter then your frame size is too small to keep
 
 One way to connect a source directly to a sink is using **module-loopback**.
 
-```ini
+```shell
 $ pactl load-module module-loopback latency_msec=1
 ```
 
 And for unloading previous module.
 
-```ini
+```shell
 $ pactl unload-module module-loopback
 ```
 
 The other (and often better what comes to overall latency) way is to use **pacat** command and piping.
 
-```ini
+```shell
 pacat -r --latency-msec=1 -d SOURCE-NAME | pacat -p --latency-msec=1 -d SINK-NAME
 ```
 
 Use complete source/sink names.
 
-```ini
+```shell
 pacat -r \
   --latency-msec=1 \
   -d alsa_input.usb-Burr-Brown_from_TI_USB_Audio_CODEC-00-CODEC.analog-stereo \
