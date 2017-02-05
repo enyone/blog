@@ -248,7 +248,7 @@ $ pactl unload-module 7
 Then load it again with new parameter values.
 
 ```shell
-pactl load-module module-alsa-card \
+$ pactl load-module module-alsa-card \
  device_id="2" \
  name="usb-0d8c_USB_Sound_Device-00-Device" \
  card_name="alsa_card.usb-0d8c_USB_Sound_Device-00-Device" \
@@ -298,13 +298,13 @@ $ pactl unload-module module-loopback
 The other (and often better what comes to overall latency) way is to use **pacat** command and piping.
 
 ```shell
-pacat -r --latency-msec=1 -d SOURCE-NAME | pacat -p --latency-msec=1 -d SINK-NAME
+$ pacat -r --latency-msec=1 -d SOURCE-NAME | pacat -p --latency-msec=1 -d SINK-NAME
 ```
 
 Use complete source/sink names.
 
 ```shell
-pacat -r \
+$ pacat -r \
   --latency-msec=1 \
   -d alsa_input.usb-Burr-Brown_from_TI_USB_Audio_CODEC-00-CODEC.analog-stereo \
 | pacat -p \
