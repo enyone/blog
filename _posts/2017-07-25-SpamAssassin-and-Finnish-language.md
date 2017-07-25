@@ -2,6 +2,8 @@
 
 Just wanted to share some useful spam preventing rules matching Finnish language.
 
+end of TL;DR so now go and read...
+
 You can add and maintain your SpamAssassin rules in directory:
 
 ```shell
