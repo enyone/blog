@@ -1,1 +1,0 @@
-# SpamAssassing and Finnish language
