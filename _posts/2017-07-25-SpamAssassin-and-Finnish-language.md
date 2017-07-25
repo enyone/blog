@@ -16,7 +16,7 @@ One practice is to edit existing rules and the other is to add a separate custom
 /usr/share/spamassassin$ vi 90_custom.cf
 ```
 
-Content of the rule file leads to SpamAssassin documentation https://wiki.apache.org/spamassassin/WritingRules
+Content of the rule file leads to [SpamAssassin documentation](https://wiki.apache.org/spamassassin/WritingRules)
 
 I'm currently using following content:
 
