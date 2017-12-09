@@ -11,7 +11,7 @@ Vuonna 2017 tavallisen ihmisen on mahdollista kommunikoida eri kanavia pitkin; p
 ja pikaviestimet kuten whatsapp, sosiaalinen media, sähköposti, kirjeposti. Edellä mainitut
 järjestyksessä aloittaen ajallisesti kiireellisimmän asian hoitamistarkoitukseen sopivimmasta vaihtoehdosta.
 
-Ensimmäisen mainituista olen varannut juurikin vain siihen käyttöön; perheelle, viranomaisille
+Ensimmäisen mainituista, eli puhelimen, olen varannut juurikin vain siihen käyttöön; perheelle, viranomaisille
 ja niille, jotka ovat elimellisesti esteellisiä käyttämään muuta kommunikaatiotapaa. Anteeksi
 tästä valinnasta niille, joita se edelleen tämän lukemisen jälkeen harmittaa.
 
