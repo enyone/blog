@@ -1,4 +1,8 @@
+# Kommunikointitavoistani
+
 Tämä niille, jotka ovat kokeneet, että minua ei onnistu saamaan puhelimen kautta kiinni.
+
+end of TL;DR so now go and read...
 
 Anteeksi, mutta en edelleenkään aio muuttaa tapojani. Jos joku on tulkinnut sen röyhkeydekseni
 tai ylimielisyydekseni, niin anteeksi siitäkin, mutta olet kuitenkin tulkinnut asian väärin; muuta tulkintaasi.
