@@ -15,5 +15,4 @@ Ensimmäisen mainituista olen varannut juurikin vain siihen käyttöön; perheel
 ja niille, jotka ovat elimellisesti esteellisiä käyttämään muuta kommunikaatiotapaa. Anteeksi
 tästä valinnasta niille, joita se edelleen tämän lukemisen jälkeen harmittaa.
 
-Myös James on kiteyttänyt asian varsin hyvin omassa blogissaan:
-https://jameshfisher.com/2017/11/08/i-hate-telephones.html
+Myös James on kiteyttänyt asian varsin hyvin omassa blogissaan [I hate telephones](https://jameshfisher.com/2017/11/08/i-hate-telephones.html)
