@@ -1,4 +1,4 @@
-# Kommunikointitavoistani
+# Hieman kommunikointitavoistani
 
 Tämä niille, jotka ovat kokeneet, ettei minuun onnistu saamaan puhelimen kautta yhteyttä.
 
