@@ -83,3 +83,17 @@ sudo mv /usr/local/share/polkit-1/actions/org.freedesktop.bolt.policy /usr/share
 sudo mv /usr/local/share/polkit-1/rules.d/org.freedesktop.bolt.rules /usr/share/polkit-1/rules.d/
 sudo mv /usr/local/etc/dbus-1/system.d/org.freedesktop.bolt.conf /etc/dbus-1/system.d/
 ```
+
+# Debugging
+
+When things work succesfully you should see
+```
+$ sudo cat /var/log/daemon.log|grep bolt
+Feb 16 19:52:48 systemd[1]: Starting Thunderbolt system service...
+Feb 16 19:52:49 boltd[4575]: 19:52:48 [da010000-0072-70...] added (/sys/devices/pci0000:00/00...)
+Feb 16 19:52:49 systemd[1]: Started Thunderbolt system service.
+Feb 16 19:52:49 boltd[4575]: 19:52:49 [e0010000-0070-6f...] connected: 1 (/sys/devices/pci0000:00/00...)
+Feb 16 19:52:49 boltd[4575]: 19:52:49 [e0010000-0070-6f...] authorizing
+Feb 16 19:52:53 boltd[4575]: 19:52:53 [e0010000-0070-6f...] authorized
+Feb 16 19:52:53 boltd[4575]: 19:52:53 [e0010000-0070-6f...] device changed: authorized-secure
+```
