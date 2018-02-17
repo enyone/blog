@@ -27,7 +27,7 @@ $ sudo apt install python3 python3-pip ninja-build \
 $ pip3 install --user meson
 ```
 
-And build it with the instructions at gicmo/bolt README.md
+And build it with the instructions at `gicmo/bolt README.md`
 ```bash
 $ cd bolt/
 $ ~/.local/bin/meson build
@@ -75,7 +75,7 @@ Your dock now works including all usb3 ports, displayports, audio, and ethernet 
 
 # Note for Debian 9.x users
 
-Default location of D-Bus and Polkit configuration files when running "sudo ninja install" is /usr/local/ and at least my Debian was unable to detect file presence there. This can be fixed by manually moving following files
+Default location of D-Bus and Polkit configuration files when running `sudo ninja install` is `/usr/local/` and at least with my Debian it was unable to detect these files there. This can be fixed by manually moving following files
 ```bash
 sudo mv /usr/local/share/dbus-1/interfaces/org.freedesktop.bolt.xml /usr/share/dbus-1/interfaces/
 sudo mv /usr/local/share/dbus-1/system-services/org.freedesktop.bolt.service /usr/share/dbus-1/system-services/
