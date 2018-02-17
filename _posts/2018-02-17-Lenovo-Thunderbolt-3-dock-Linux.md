@@ -10,9 +10,9 @@ When surfing different web forums I found that Lenovo ThinkPad Thunderbolt 3 doc
 
 Do NOT turn off your Thunderbolt security features from bios ever.
 
-As said the dock works without any effort with Linux kernel 4.14 and newer but with turning Thunderbolt security features off from bios. Reason is that even though Linux kernel is capable to intoduce Thunderbolt devices and (starting from 4.14) different Thunderbolt autorization modes for connected devices it is not offering any user friendly way to grant auhorized access to new connected Thunderbolt devices.
+As said the dock works without any effort with Linux kernel 4.14 and newer but with turning Thunderbolt security features off from bios. Reason is that even though Linux kernel is capable to introduce Thunderbolt devices and (starting from 4.14) different Thunderbolt authorization modes for connected devices it is not offering any user friendly way to grant authorized access to new connected Thunderbolt devices.
 
-At the time of writing this article there was no distro providing any user firendly tools for end-user leaving communication with raw kernel device file handles the only possible thing left. Not quite as there is one fresh project evolving for publishing Thunderbold device autorization capabilities over D-Bus and it is [gicmo/bolt](https://github.com/gicmo/bolt)
+At the time of writing this article there was no distro providing any user friendly tools for end-user leaving communication with raw kernel device file handles the only possible thing left. Not quite as there is one fresh project evolving for publishing Thunderbolt device authorization capabilities over D-Bus and it is [gicmo/bolt](https://github.com/gicmo/bolt)
 
 You just clone it with git
 ```bash
@@ -47,7 +47,7 @@ And install it to your system
 $ sudo ninja install
 ```
 
-After rebooting you should be able to run boltctl command and see attached devices
+After rebooting you should be able to run `boltctl` command and see attached devices
 ```bash
 $ boltctl 
  ● ThinkPad Thunderbolt 3 Dock
