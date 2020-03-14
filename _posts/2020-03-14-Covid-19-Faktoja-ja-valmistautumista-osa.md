@@ -6,7 +6,7 @@ pahoittelee jo etukäteen kielellistä kyvyttömyyttään kirjoittaa johdonmukai
 sillä hän kirjoittaa yleensä vain ICT-alan asiasisältöä asiantuntijatyön koulutuksiin ja dokumentointitarpeisiin.
 
 Teksti ei juuri sisällä tietoa SARS-CoV-2 viruksen aiheuttaman infektion oireista tai vaarallisuudesta suhteessa muihin
-tartuntatauteihin, sillä sitä ei tällä hetkellä juuri tunneta. Lisätiedoille hyviä lähteitä ovat http://who.int sekä http://thl.fi.
+tartuntatauteihin, sillä sitä ei tällä hetkellä juuri tunneta. Lisätiedoille hyviä lähteitä ovat <http://who.int> sekä http://thl.fi.
 
 Oletus tiedeyhteisössä on toistaiseksi ollut, että puhutaan yleisvaarallisesta hengitystieinfektiosta, jonka aiheuttaman
 infektion oireiden vaarallisuus on hieman, mutta ei merkittävästi, Influenza-A viruksen aiheuttamia oireita suurempi<sup>[0]</sup>.
