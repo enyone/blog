@@ -1,5 +1,7 @@
 # Covid-19 Faktoja ja valmistautumista, Osa 1
 
+lauantai 2020-03-14
+
 Amatöörin ajatuksia ja viitteellistä faktatietoa liittyen puhjenneeseen maailmanlaajuiseen Covid-19 pandemiaan ja sen
 aiheuttajavirukseen SARS-CoV-2. Kirjoittelu sisältää aihealueittain ajatuksia ja tietoa aiheesta, mutta kirjoittaja
 pahoittelee jo etukäteen kielellistä kyvyttömyyttään kirjoittaa johdonmukaisesti etenevää ja helposti luettavaa kokonaisuutta,
@@ -7,6 +9,10 @@ sillä hän kirjoittaa yleensä vain ICT-alan asiasisältöä asiantuntijatyön 
 
 Teksti ei juuri sisällä tietoa SARS-CoV-2 viruksen aiheuttaman infektion oireista tai vaarallisuudesta suhteessa muihin
 tartuntatauteihin, sillä sitä ei tällä hetkellä juuri tunneta. Lisätiedoille hyviä lähteitä ovat <http://who.int> sekä <http://thl.fi>.
+
+end of TL;DR so now go and read...
+
+## Alkupuhe
 
 Oletus tiedeyhteisössä on toistaiseksi ollut, että puhutaan yleisvaarallisesta hengitystieinfektiosta, jonka aiheuttaman
 infektion oireiden vaarallisuus on hieman, mutta ei merkittävästi, Influenza-A viruksen aiheuttamia oireita suurempi<sup>[0]</sup>.
@@ -18,20 +24,18 @@ nyt nähtävälle uudelle virukselle, sekä muualta päin maailmaa saatuihin tie
 tulee kasvamaan lähiviikkojen aikana. Julkaistua tutkimusaineistoa, johon on kannattavaa viitata, on toistaiseksi hyvin
 rajoitetusti saatavilla.
 
-end of TL;DR so now go and read...
+## Johdanto
 
 Aloitetaan kirjoittelu ensimmäisestä lauantaista Suomen hallituksen kattavien suosituksien voimaantultua<sup>[1]</sup>. Nyt on
 hyvä hetki istua alas ja kuulostella tilannetta sekä itseään ilmaantuneen vapaa-ajan varjossa, kun osa yhteiskunnan
 normaaleista aktiviteeteista on alasajossa, aiheuttaen aukon suurimman osan meistä harrastuksiin ja muihin päivittäisiin
 normeihin. Aion käyttää osan tästä ajasta ajatuksieni ja löytämäni faktatiedon purkamiseen tekstiksi.
 
-Huomiona kuitenkin, että minulla ole antaa osoitettua pätevyyttä sellaisenaan tekstini tueksi. Koetan kuitenkin
+Huomiona kuitenkin, ettei minulla ole antaa osoitettua pätevyyttä sellaisenaan tekstini tueksi. Koetan kuitenkin
 lisätä sekaan viittauksia sitä mukaa, kun väitän jotain asiaa suuntaan tai toiseen. Väitän kuitenkin tietävän aiheesta
 ainakin sen, millä tavalla olen itse päässyt 15 vuotta sitten kärsimästäni yleisestä pelosta kaikkia silloisia normaaleja
 tartuntatauteja kohtaan. Huomaan siis pitkästä aikaa kanssaihmisissä monia samoja reagointimalleja ja tekoja<sup>[2]</sup>,
 joita itse tein ja jotka olen sittemmin todennut käsitykseni kasvaessa joko oikeasti hyödyllisiksi tai varsin turhiksi.
-
-## Tekstin tarkoitus
 
 Tekstin tarkoitus on etupäässä kohdistaa pelkäävän ja ahdistuvan ihmisen hallinnantunteen palauttamiseksi tekemät teot
 hyödyllisiksi teoiksi, jotka auttavat henkilöä itseään ja muuta yhteiskuntaa, ja yrittää syöstä valheellista hallinnantunnetta
@@ -67,7 +71,7 @@ väestömme keskuudessa infektiotapaukset tulevat lisääntymään merkittäväs
 Tämä on pandemiatilanteessa normaalia, eikä esimerkiksi seurausta Suomen hallinnon hidastelusta. Mediassa ja somessa on ollut
 arvostelua siitä, miksi Suomi ei laita rajoja ja loppujakin yhteiskunnan toiminnoista, kuten kouluja, kiinni. Näitä toimia
 voidaan ottaa käyttöön paikallisten epidemioiden leviämisnopeutta hidastavina toimina, mutta pandemiatilanteesta johtuen niillä
-ei ole arvoa leviämistä kokonaan estävänä toimina.
+ei ole arvoa leviämistä kokonaan estävinä toimina.
 
 Pandemiasta johtuen on myös todennäköistä, että uusi viruksemme ei tule katoamaan yhteiskunnasta pitkään aikaan<sup>[7][8]</sup>. Vaikka valtion
 rajat ja toiminnot ajettaisiin kokonaan alas, paikallisia epidemioita alkaisi ilmetä heti kun rajoja ja toimintoja alettaisiin
@@ -166,9 +170,9 @@ Chemical and Radiological", ja jonka varusmiespalveluksessa vierailleet tuntevat
 
 ## Errata
 
-Ei korjauksia toistaiseksi.
+* 2020-03-15 Otsikointimuutoksia ja korjattuja kirjoitusvirheitä
 
-Korjausehdotuksia viitteineen voi ehdottaa GitHubin kautta käyttäjälle https://github.com/enyone
+Korjausehdotuksia viitteineen voi ehdottaa GitHubin kautta käyttäjälle github.com/enyone
 
 ## Viitteet
 
