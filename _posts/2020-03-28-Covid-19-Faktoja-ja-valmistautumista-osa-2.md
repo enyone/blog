@@ -97,13 +97,13 @@ alkoholi haihtua ja seossuhde laimentua. Jos et saavuta tätä kestoa käsihuuhd
 Lisäksi kaikki virukset jäävät käsiisi, toisin kun käsien saippuapesussa juoksevalla vedellä ja kaikki riippuu siitä, menettävätkö ne infektointikykynsä.
 
 Alkoholin suhteen lisääminen 75%:sta ei merkittävästi nosta seoksen tehoa tehdä viruksesta vaaratonta nopeammin ja pelkän alkoholin käyttäminen
-ilman seoksessa olevaa vettä on jopa heikompi, kuin 75% seossuhteen käyttäminen. Vesi on läsnä ollessaan ikään kuin katalyytti.
+ilman seoksessa olevaa vettä on jopa heikompi, kuin 75% seossuhteen käyttäminen<sup>[14]</sup>. Vesi on läsnä ollessaan ikään kuin katalyytti.
 
 Riisu hengityssuojaimet ja kumihanskat oikeaoppisesti koskettamatta niiden ulkopintaa, sillä niiden ulkopinta on luonnollisesti se mikä kerää pöpöt.
 Kertakäyttökäsineet ja -hengityssuojaimet ovat nimensä mukaisesti kertakäyttöisiä, eli et saa ottaa niitä pois kasvoiltasi tai käsistäsi
 heittämättä niitä välittömästi roskikseen. Älä varsinkaan kosketa kasvojasi hengityssuojainta niille asetellessasi, äläkä koskaan siirrä
 hengityssuojainta kaulalle roikkumaan. Käytä vain oikeankokoista ja -muotoista hengityssuojaimia, jotka sopivat kasvoillesi tiiviisti, sillä tiiveys
-on tärkeää. Lisäksi käytä vain riittävän suodatuskyvyn omaavia hengityssuojaimia<sup>[14]</sup>.
+on tärkeää. Lisäksi käytä vain riittävän suodatuskyvyn omaavia hengityssuojaimia<sup>[15]</sup>.
 
 Ei-kertakäyttöisiin henkilösuojaimiin sopii kumisaapas-analogia; miksi käytät kumisaappaita kurakelillä? Sillä et käytä niitä missään muualla ja ne
 on helppo puhdistaa seuraavaa kertaa varten. Kumpparit jalkaan ja ruokakauppaan, sillä kaupan lattia on myös pinta johon kaikki aivastuspärskeet
@@ -111,7 +111,7 @@ viruksineen laskeutuvat.
 
 ## Errata
 
-Ei korjauksia toistaiseksi.
+* 2020-03-29 Lisätty viite 14
 
 Korjausehdotuksia viitteineen voi ehdottaa GitHubin kautta käyttäjälle github.com/enyone
 
@@ -130,4 +130,5 @@ Korjausehdotuksia viitteineen voi ehdottaa GitHubin kautta käyttäjälle github
 * [11] <https://yle.fi/uutiset/3-11268965>
 * [12] <https://www.nytimes.com/2020/03/25/opinion/coronavirus-face-mask.html>
 * [13] <https://www.ncbi.nlm.nih.gov/pubmed/15923059>
-* [14] <https://thl.fi/fi/web/infektiotaudit-ja-rokotukset/taudit-ja-torjunta/infektioiden-ehkaisy-ja-torjuntaohjeita/hengityksensuojaimien-kaytto>
+* [14] <https://www.ncbi.nlm.nih.gov/books/NBK214356/>
+* [15] <https://thl.fi/fi/web/infektiotaudit-ja-rokotukset/taudit-ja-torjunta/infektioiden-ehkaisy-ja-torjuntaohjeita/hengityksensuojaimien-kaytto>
